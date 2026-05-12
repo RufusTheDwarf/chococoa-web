@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Espace VIP Chococoa-Web — recettes secrètes, astuces de dégustation et offres exclusives.">
+        <meta name="keywords" content="chocolat VIP, recettes exclusives, dégustation, club chocolat">
+        <meta name="author" content="Rafael Melo">
+        <link href="images/faviconsiteweb.webp" rel="icon" type="image/webp">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/global.css">
+        <title>Espace VIP — Chococoa-Web</title>
+        <style>
+            .vip-badge {
+                display: inline-block;
+                background: linear-gradient(135deg, #FFD700, #FFA500);
+                color: #3E1F00;
+                font-weight: 700;
+                padding: 6px 18px;
+                border-radius: 50px;
+                font-size: 0.9em;
+                margin-bottom: 16px;
+                box-shadow: 0 3px 10px rgba(255,165,0,0.3);
+                letter-spacing: 1px;
+            }
+            .recipe-steps { counter-reset: steps; margin-top: 14px; }
+            .recipe-step {
+                display: flex; gap: 16px; align-items: flex-start;
+                margin-bottom: 14px;
+            }
+            .step-num {
+                background: #8b5a2b; color: #fff;
+                border-radius: 50%; width: 30px; height: 30px;
+                display: flex; align-items: center; justify-content: center;
+                font-weight: 700; font-size: 0.9em; flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="nav">
+            <p class="logo"><a href="index.html">Chococoa-Web</a></p>
+            <div class="menu-nav">
+                <p><a href="Accueil.html">Accueil</a></p>
+                <p><a href="Infos.html">Infos</a></p>
+                <p><a href="Quiz.html">Quiz</a></p>
+                <p><a href="EspaceVIP.html">Espace VIP</a></p>
+            </div>
+            <div class="nav-drips">
+                <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+                <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+                <div class="drip"></div><div class="drip"></div><div class="drip"></div>
+                <div class="drip"></div>
+            </div>
+        </div>
+        <div class="choco-bg">
+            <div class="choco-piece">🍫</div><div class="choco-piece">🍫</div>
+            <div class="choco-piece">🍫</div><div class="choco-piece">🍫</div>
+            <div class="choco-piece">🍫</div><div class="choco-piece">🍫</div>
+        </div>
+
+        <div class="Centraliser">
+            <div style="text-align:center; animation: slide-in-down 0.8s ease both; margin-top:10px;">
+                <span class="vip-badge">ESPACE EXCLUSIF</span>
+                <h1 style="font-size:2.2em; color:#2c1810; margin:8px 0 10px;">Bienvenue dans l'Espace VIP</h1>
+            </div>
+            <p class="sous-titre">Profitez de contenus exclusifs, de recettes gourmandes et de conseils réservés aux vrais amateurs de chocolat.</p>
+
+            <!-- Recette secrète -->
+            <div class="section-card" style="animation-delay:0.1s;">
+                <h2>Recette Secrète VIP — Ganache Chocolat-Orange</h2>
+                <p>Un classique raffiné qui transforme chaque moment en fête. Pour environ 20 truffes :</p>
+                <p style="margin-top:10px;"><strong>Ingrédients :</strong> 200 g de chocolat noir 70 %, 100 ml de crème entière, 1 orange bio (zeste), 20 g de beurre doux, cacao en poudre pour rouler.</p>
+                <div class="recipe-steps">
+                    <div class="recipe-step">
+                        <div class="step-num">1</div>
+                        <p>Faites chauffer la crème à feu doux avec le zeste d'orange finement râpé jusqu'à frémissement.</p>
+                    </div>
+                    <div class="recipe-step">
+                        <div class="step-num">2</div>
+                        <p>Versez la crème chaude sur le chocolat haché en petits morceaux. Attendez 1 minute, puis mélangez lentement du centre vers l'extérieur.</p>
+                    </div>
+                    <div class="recipe-step">
+                        <div class="step-num">3</div>
+                        <p>Incorporez le beurre en petits cubes pour une ganache brillante et onctueuse.</p>
+                    </div>
+                    <div class="recipe-step">
+                        <div class="step-num">4</div>
+                        <p>Réfrigérez 2 heures. Formez des boules à la cuillère et roulez-les dans le cacao en poudre.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astuces de dégustation -->
+            <div class="section-card" style="animation-delay:0.2s;">
+                <h2>Les 5 Sens de la Dégustation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>La Vue</h3>
+                        <p>Un bon chocolat est brillant et d'une couleur uniforme. Un aspect mat ou grisâtre trahit un mauvais tempérage.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>L'Ouïe</h3>
+                        <p>Cassez le carré : un bruit sec et net (« snap ») indique une cristallisation parfaite du beurre de cacao.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>L'Odorat</h3>
+                        <p>Respirez profondément. Un chocolat de qualité offre des notes florales, fruitées ou torréfiées — jamais une odeur de beurre rance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Le Toucher</h3>
+                        <p>Il doit fondre rapidement au contact de la peau — signe d'un beurre de cacao pur sans substitut.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Le Goût</h3>
+                        <p>Laissez fondre lentement une petite bouchée. Les arômes se révèlent en 3 vagues : première impression, cœur et finale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Club chocolat -->
+            <div class="section-card" style="animation-delay:0.3s;">
+                <h2>Offres Exclusives VIP</h2>
+                <div class="feature-grid">
+                    <div class="feature-card" style="background: linear-gradient(135deg, #fff9ec, #fff0d0);">
+                        <h3>Club du Chocolat</h3>
+                        <p>Accès prioritaire aux nouveaux arrivages, invitations aux dégustations privées et conseils personnalisés de nos maîtres chocolatiers.</p>
+                    </div>
+                    <div class="feature-card" style="background: linear-gradient(135deg, #fff9ec, #fff0d0);">
+                        <h3>Guide Cadeaux</h3>
+                        <p>Associations idéales : chocolat noir + whisky tourbé, chocolat au lait + café latte, chocolat blanc + champagne rosé.</p>
+                    </div>
+                    <div class="feature-card" style="background: linear-gradient(135deg, #fff9ec, #fff0d0);">
+                        <h3>Bibliothèque Secrète</h3>
+                        <p>Accédez à notre collection de recettes avancées, techniques de tempérage et fiches de dégustation comme un professionnel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citation VIP -->
+            <div class="InfosScientifiques" style="margin-top:28px;">
+                <h1>La Philosophie VIP</h1>
+                <p>Le vrai amateur de chocolat ne mange pas pour combler une envie — il déguste pour <strong>vivre une expérience sensorielle complète</strong>. Chaque tablette raconte l'histoire d'une fève, d'un terroir, d'un artisan.</p>
+                <div class="citation">
+                    <h2>« Le chocolat est la réponse. Quelle était la question ? »</h2>
+                    <p>— Auteur inconnu, mais très sage</p>
+                </div>
+            </div>
+        </div>
+        <script src="./JS/mouvement-de-page.js"></script>
+    </body>
+    <footer>
+        <p><small>© 2025 Chococoa-Web — ETML &nbsp;|&nbsp; <a href="Conditions-generales.html">Mentions légales</a></small></p>
+    </footer>
+</html>
