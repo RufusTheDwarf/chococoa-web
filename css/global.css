@@ -160,7 +160,7 @@ body {
 
 /* ===== HERO / BIENVENUE ===== */
 .bienvenue {
-    padding: 60px 40px 20px;
+    padding: 140px 40px 70px;
     color: #2c1810;
     font-size: clamp(2em, 5vw, 3.5em);
     text-align: center;
@@ -169,6 +169,7 @@ body {
     font-weight: 700;
     letter-spacing: -1px;
     animation: slide-in-down 0.8s cubic-bezier(0.34,1.56,0.64,1);
+    
 }
 
 .bienvenue strong {
@@ -195,6 +196,7 @@ body {
     letter-spacing: 0.5px;
     line-height: 1.6;
     animation: fade-in-up 0.8s ease-out 0.2s both;
+    margin-bottom: 270px;
 }
 
 /* ===== CARDS & SECTIONS ===== */
@@ -268,8 +270,8 @@ body {
 .PhotosEtInfos {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
+    gap: 200px;
+    margin:40px auto;
     padding: 36px;
     flex-wrap: wrap;
     background: rgba(255, 245, 230, 0.95);
@@ -285,7 +287,7 @@ body {
     flex: 0 1 auto;
 }
 
-.carte-info h4 {
+.carte-info h1 {
     color: #3E1F00;
     margin: 14px 0 6px;
     font-size: 1.05em;
