@@ -8,588 +8,7 @@
     <meta name="author" content="Rafael Melo">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Livrable 7.4 - Chococoa-Web</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(160deg, #f7f1d2 0%, #f0e6c8 100%);
-            color: #2c1810;
-            font-family: 'Roboto', sans-serif;
-            min-height: 100vh;
-        }
-
-        /* ===== PAGE DE GARDE ===== */
-        .PageDeGarde {
-            background: linear-gradient(145deg, #3B1A08 0%, #5A2810 55%, #C07830 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 60px 40px;
-        }
-
-        .PageDeGarde h1 {
-            color: #fff;
-            font-size: 3.5em;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .PageDeGarde h1 span {
-            color: #E8A84C;
-            font-style: italic;
-        }
-
-        .PageDeGarde p {
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 1.1em;
-            max-width: 520px;
-            margin: 20px auto 50px;
-            line-height: 1.7;
-        }
-
-        .InfosProjet {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .InfosProjet div {
-            background: rgba(255, 255, 255, 0.10);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            border-radius: 50px;
-            padding: 10px 24px;
-            font-size: 0.88em;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .InfosProjet div strong {
-            color: #E8A84C;
-            display: block;
-            font-size: 0.78em;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        /* ===== NAVIGATION (même style que le site) ===== */
-        .nav {
-            background: linear-gradient(90deg, #4F2D00 0%, #6B4423 50%, #4F2D00 100%);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 40px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(62, 31, 0, 0.35);
-        }
-
-        .nav .logo a {
-            color: #fff;
-            text-decoration: none;
-            background: linear-gradient(135deg, #8b5a2b 0%, #a0622d 100%);
-            padding: 10px 28px;
-            border-radius: 50px;
-            font-weight: 700;
-        }
-
-        .MenuNav {
-            display: flex;
-            gap: 10px;
-        }
-
-        .MenuNav a {
-            padding: 9px 22px;
-            background: rgba(255, 255, 255, 0.12);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9em;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-
-        .MenuNav a:hover {
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        /* ===== CONTENU PRINCIPAL ===== */
-        .Centraliser {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 40px;
-        }
-
-        /* ===== TITRES DE SECTION ===== */
-        .TitreSectionTag {
-            font-size: 0.75em;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #C07830;
-            margin-bottom: 10px;
-        }
-
-        .TitreSection {
-            font-size: 2em;
-            color: #3B1A08;
-            margin-bottom: 24px;
-            font-weight: 700;
-        }
-
-        .TexteSection {
-            color: #5c3d2e;
-            line-height: 1.78;
-            margin-bottom: 14px;
-        }
-
-        .TexteSection strong {
-            color: #2c1810;
-        }
-
-        .TexteSection a {
-            color: #6B3A1F;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #e0d0bb;
-            margin: 0;
-        }
-
-        .Separateur {
-            padding: 60px 40px;
-        }
-
-        /* ===== URL ===== */
-        .CarteLien {
-            background: #3B1A08;
-            border-radius: 14px;
-            padding: 28px 32px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin: 28px 0;
-        }
-
-        .CarteLien span {
-            font-size: 1.8em;
-        }
-
-        .CarteLien a {
-            color: #E8A84C;
-            font-size: 1.05em;
-            font-weight: 600;
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        .CarteLien a:hover {
-            text-decoration: underline;
-        }
-
-        .CarteLien small {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.75em;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 4px;
-        }
-
-        /* ===== MAQUETTES ===== */
-        .GrilleMaquettes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 28px;
-        }
-
-        .CarteMaquette {
-            flex: 1 1 260px;
-            background: #fff;
-            border: 1px solid #e0d0bb;
-            border-radius: 14px;
-            overflow: hidden;
-        }
-
-        .AperçuWireframe {
-            background: linear-gradient(160deg, #f0e4cf 0%, #e8d5bb 100%);
-            height: 170px;
-            padding: 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .wf-nav {
-            width: 100%;
-            height: 14px;
-            background: #3B1A08;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            padding: 0 8px;
-            gap: 4px;
-        }
-
-        .wf-logo {
-            width: 34px;
-            height: 6px;
-            background: #E8A84C;
-            border-radius: 3px;
-            margin-right: auto;
-        }
-
-        .wf-lien {
-            width: 20px;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.4);
-            border-radius: 3px;
-        }
-
-        .wf-hero {
-            width: 100%;
-            height: 40px;
-            background: linear-gradient(135deg, #c07830, #e8a84c);
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .wf-hero span {
-            width: 55%;
-            height: 7px;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 3px;
-        }
-
-        .wf-cols {
-            display: flex;
-            gap: 6px;
-            height: 38px;
-        }
-
-        .wf-col {
-            flex: 1;
-            background: rgba(59, 26, 8, 0.10);
-            border-radius: 5px;
-        }
-
-        .wf-ligne {
-            height: 5px;
-            background: rgba(59, 26, 8, 0.15);
-            border-radius: 3px;
-            margin-bottom: 5px;
-        }
-
-        .wf-ligne.courte {
-            width: 60%;
-        }
-
-        .wf-input {
-            height: 9px;
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(59, 26, 8, 0.2);
-            border-radius: 3px;
-            margin-bottom: 6px;
-        }
-
-        .wf-btn {
-            width: 45%;
-            height: 11px;
-            background: #c07830;
-            border-radius: 4px;
-            margin-top: 4px;
-        }
-
-        .wf-footer {
-            width: 100%;
-            height: 11px;
-            background: rgba(59, 26, 8, 0.18);
-            border-radius: 3px;
-            margin-top: auto;
-        }
-
-        .InfoMaquette {
-            padding: 16px 18px;
-        }
-
-        .InfoMaquette h3 {
-            font-size: 0.92em;
-            color: #3B1A08;
-            margin-bottom: 4px;
-        }
-
-        .InfoMaquette p {
-            font-size: 0.8em;
-            color: #7A5C45;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .BadgePage {
-            display: inline-block;
-            font-size: 0.68em;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: #C07830;
-            background: rgba(192, 120, 48, 0.12);
-            padding: 3px 10px;
-            border-radius: 50px;
-            margin-bottom: 6px;
-        }
-
-        /* ===== W3C ===== */
-        .GrilleW3C {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-top: 28px;
-        }
-
-        .CarteW3C {
-            flex: 1 1 200px;
-            background: #fff;
-            border: 1px solid #e0d0bb;
-            border-radius: 14px;
-            padding: 22px;
-            text-align: center;
-        }
-
-        .CarteW3C h3 {
-            font-size: 0.9em;
-            color: #7A5C45;
-            font-weight: 500;
-        }
-
-        .BadgeValide {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #EAF7EC;
-            color: #2D7A3A;
-            font-weight: 700;
-            padding: 10px 20px;
-            border-radius: 50px;
-            margin: 12px 0 8px;
-        }
-
-        .CarteW3C p {
-            font-size: 0.8em;
-            color: #7A5C45;
-        }
-
-        .ListeCorrections {
-            margin: 20px 0 0 22px;
-            color: #5c3d2e;
-            line-height: 2;
-        }
-
-        .ListeCorrections li {
-            margin-bottom: 4px;
-        }
-
-        /* ===== OPQUAST ===== */
-        .ListeOpquast {
-            list-style: none;
-            margin-top: 28px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        .ListeOpquast li {
-            background: #fff;
-            border: 1px solid #e0d0bb;
-            border-left: 4px solid #C07830;
-            border-radius: 14px;
-            padding: 18px 22px;
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .NumeroRegle {
-            background: #3B1A08;
-            color: #E8A84C;
-            font-weight: 700;
-            font-size: 0.78em;
-            min-width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .CorpsRegle h3 {
-            font-size: 0.93em;
-            color: #3B1A08;
-            margin-bottom: 4px;
-        }
-
-        .CorpsRegle p {
-            font-size: 0.84em;
-            color: #7A5C45;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        .TagRegle {
-            display: inline-block;
-            font-size: 0.68em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 2px 9px;
-            border-radius: 50px;
-            margin-bottom: 6px;
-        }
-
-        .tag-nav {
-            background: #EEF3FF;
-            color: #3B5BDB;
-        }
-
-        .tag-html {
-            background: #FFF0E6;
-            color: #CC5500;
-        }
-
-        .tag-css {
-            background: #F0EEFF;
-            color: #6741D9;
-        }
-
-        .tag-access {
-            background: #EAF7EC;
-            color: #2D7A3A;
-        }
-
-        .tag-mobile {
-            background: #FFF8E1;
-            color: #B36B00;
-        }
-
-        .tag-form {
-            background: #FCE4EC;
-            color: #B5003D;
-        }
-
-        /* ===== CONCLUSION ===== */
-        .Conclusion {
-            background: linear-gradient(145deg, #3B1A08 0%, #6B3A1F 100%);
-            border-radius: 20px;
-            padding: 44px 40px;
-            margin-top: 28px;
-        }
-
-        .Conclusion h2 {
-            color: #fff;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-
-        .Conclusion p {
-            color: rgba(255, 255, 255, 0.82);
-            line-height: 1.78;
-            margin-bottom: 14px;
-        }
-
-        .GrilleChiffres {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 28px;
-        }
-
-        .CarteChiffre {
-            flex: 1 1 150px;
-            background: rgba(255, 255, 255, 0.10);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            padding: 18px;
-            text-align: center;
-        }
-
-        .CarteChiffre strong {
-            display: block;
-            font-size: 1.7em;
-            color: #E8A84C;
-            margin-bottom: 5px;
-        }
-
-        .CarteChiffre span {
-            font-size: 0.82em;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: linear-gradient(90deg, #3E1F00 0%, #4F2D00 100%);
-            padding: 22px 36px;
-            text-align: center;
-        }
-
-        footer p {
-            color: wheat;
-            font-size: 0.9em;
-        }
-
-        footer a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 650px) {
-            .PageDeGarde h1 {
-                font-size: 2.2em;
-            }
-
-            .Centraliser {
-                padding: 40px 18px;
-            }
-
-            .nav {
-                padding: 12px 16px;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .MenuNav {
-                flex-wrap: wrap;
-                gap: 6px;
-            }
-
-            .MenuNav a {
-                padding: 7px 14px;
-                font-size: 0.82em;
-            }
-
-            .CarteLien {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .Conclusion {
-                padding: 28px 22px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/livrable.css">
 </head>
 
 <body>
@@ -636,7 +55,8 @@
 
         <p class="TexteSection">Sur le plan technique, ce projet a permis de consolider les notions de
             <strong>sémantique HTML5</strong>, de <strong>mise en page CSS</strong> (Flexbox, Grid, animations), de
-            <strong>responsive design</strong> et de conformité aux standards W3C et aux bonnes pratiques OpQuast.</p>
+            <strong>responsive design</strong> et de conformité aux standards W3C et aux bonnes pratiques OpQuast.
+        </p>
 
         <p class="TexteSection">Le thème du chocolat permettait de couvrir une variété de pages : contenu scientifique,
             boutique fictive, formulaires de contact et d'inscription, réseaux sociaux, actualités et conditions légales
@@ -865,7 +285,8 @@
         <h3 style="margin-top:32px; margin-bottom:10px; color:#3B1A08;">Principales corrections apportées</h3>
         <ul class="ListeCorrections">
             <li>Balises sémantiques : <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
-                <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code></li>
+                <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>
+            </li>
             <li>Un seul <code>&lt;h1&gt;</code> par page, hiérarchie h2 &gt; h3 respectée</li>
             <li>Menu de navigation avec <code>&lt;ul&gt;&lt;li&gt;</code> au lieu de <code>&lt;div&gt;&lt;p&gt;</code>
             </li>
@@ -875,7 +296,8 @@
             <li>Balises <code>&lt;script&gt;</code> déplacées juste avant <code>&lt;/body&gt;</code></li>
             <li>Styles inline supprimés et déplacés dans le CSS</li>
             <li>Citations avec <code>&lt;blockquote&gt;</code> + <code>&lt;cite&gt;</code>, dates avec
-                <code>&lt;time datetime&gt;</code></li>
+                <code>&lt;time datetime&gt;</code>
+            </li>
         </ul>
     </div>
 
@@ -968,7 +390,8 @@
                     <span class="TagRegle tag-form">Formulaires</span>
                     <h3>Chaque champ de formulaire a une étiquette associée</h3>
                     <p>Tous les champs (Contact, Newsletter) ont un <code>&lt;label for="..."&gt;</code> lié à leur
-                        <code>id</code>, pour une meilleure accessibilité.</p>
+                        <code>id</code>, pour une meilleure accessibilité.
+                    </p>
                 </div>
             </li>
 
@@ -988,7 +411,8 @@
                     <span class="TagRegle tag-mobile">Liens</span>
                     <h3>Les liens externes s'ouvrent dans un nouvel onglet de manière sécurisée</h3>
                     <p>Les liens vers des sites tiers utilisent <code>target="_blank"</code> et
-                        <code>rel="noopener noreferrer"</code> pour des raisons de sécurité.</p>
+                        <code>rel="noopener noreferrer"</code> pour des raisons de sécurité.
+                    </p>
                 </div>
             </li>
 
@@ -1016,7 +440,8 @@
 
             <p>L'application des règles OpQuast a aussi été révélatrice. Des détails comme les attributs
                 <code>aria-current</code>, les contrastes de couleurs ou les labels de formulaires semblent mineurs,
-                mais ont un vrai impact sur l'expérience de tous les utilisateurs.</p>
+                mais ont un vrai impact sur l'expérience de tous les utilisateurs.
+            </p>
 
             <p>Pour aller plus loin, il serait intéressant d'ajouter un vrai back-end pour les formulaires et de tester
                 l'accessibilité avec un lecteur d'écran comme NVDA.</p>
@@ -1027,7 +452,7 @@
                     <span>Pages HTML</span>
                 </div>
                 <div class="CarteChiffre">
-                    <strong>2</strong>
+                    <strong>3</strong>
                     <span>Fichiers CSS</span>
                 </div>
                 <div class="CarteChiffre">

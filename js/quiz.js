@@ -129,19 +129,19 @@ let answered = false;
 const wrongAnswers = [];
 
 // DOM refs
-const quizContainer  = document.getElementById('quiz-container');
-const quizSummary    = document.getElementById('quiz-summary');
-const quizTitle      = document.getElementById('quiz-title');
-const quizDesc       = document.getElementById('quiz-description');
+const quizContainer = document.getElementById('quiz-container');
+const quizSummary = document.getElementById('quiz-summary');
+const quizTitle = document.getElementById('quiz-title');
+const quizDesc = document.getElementById('quiz-description');
 const questionNumber = document.getElementById('question-number');
-const questionText   = document.getElementById('question-text');
-const answersDiv     = document.getElementById('answers');
-const nextBtn        = document.getElementById('next-button');
-const resultScore    = document.getElementById('result-score');
-const resultText     = document.getElementById('result-text');
-const resultDetail   = document.getElementById('result-detail');
-const restartBtn     = document.getElementById('restart-button');
-const returnBtn      = document.getElementById('return-button');
+const questionText = document.getElementById('question-text');
+const answersDiv = document.getElementById('answers');
+const nextBtn = document.getElementById('next-button');
+const resultScore = document.getElementById('result-score');
+const resultText = document.getElementById('result-text');
+const resultDetail = document.getElementById('result-detail');
+const restartBtn = document.getElementById('restart-button');
+const returnBtn = document.getElementById('return-button');
 
 // Category buttons
 document.querySelectorAll('.quiz-category').forEach(btn => {
@@ -159,7 +159,7 @@ function startQuiz() {
 
     const data = quizData[currentCategory];
     quizTitle.textContent = data.title;
-    quizDesc.textContent  = data.description;
+    quizDesc.textContent = data.description;
 
     quizContainer.classList.remove('hidden');
     quizSummary.classList.add('hidden');
@@ -170,18 +170,18 @@ function startQuiz() {
 }
 
 function showQuestion() {
-    const data     = quizData[currentCategory];
-    const q        = data.questions[currentQuestion];
-    answered       = false;
+    const data = quizData[currentCategory];
+    const q = data.questions[currentQuestion];
+    answered = false;
 
     questionNumber.textContent = `Question ${currentQuestion + 1} / ${data.questions.length}`;
-    questionText.textContent   = q.question;
-    answersDiv.innerHTML       = '';
+    questionText.textContent = q.question;
+    answersDiv.innerHTML = '';
     nextBtn.classList.add('hidden');
 
     q.answers.forEach((ans, i) => {
         const btn = document.createElement('button');
-        btn.className   = 'answer-button';
+        btn.className = 'answer-button';
         btn.textContent = ans;
         btn.addEventListener('click', () => selectAnswer(i));
         answersDiv.appendChild(btn);
@@ -192,8 +192,8 @@ function selectAnswer(index) {
     if (answered) return;
     answered = true;
 
-    const data    = quizData[currentCategory];
-    const q       = data.questions[currentQuestion];
+    const data = quizData[currentCategory];
+    const q = data.questions[currentQuestion];
     const buttons = answersDiv.querySelectorAll('.answer-button');
 
     buttons.forEach(btn => btn.disabled = true);
@@ -229,10 +229,10 @@ function showSummary() {
     resultScore.textContent = `Votre score : ${score} / ${total}`;
 
     let msg;
-    if (score === total)      msg = "Parfait ! Vous êtes un vrai expert du chocolat !";
+    if (score === total) msg = "Parfait ! Vous êtes un vrai expert du chocolat !";
     else if (score >= total * 0.75) msg = "Excellent ! Le chocolat n'a presque plus de secrets pour vous.";
-    else if (score >= total * 0.5)  msg = "Pas mal ! Vous connaissez bien le chocolat.";
-    else                             msg = "Il faut encore un peu pratiquer... en dégustant !";
+    else if (score >= total * 0.5) msg = "Pas mal ! Vous connaissez bien le chocolat.";
+    else msg = "Il faut encore un peu pratiquer... en dégustant !";
 
     resultText.textContent = msg;
 
