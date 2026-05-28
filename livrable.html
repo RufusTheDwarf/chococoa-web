@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Livrable 7.4 — Chococoa-Web, projet de site web statique ETML.">
     <meta name="author" content="Rafael Melo">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Livrable 7.4 — Chococoa-Web</title>
+    <title>Livrable 7.4 - Chococoa-Web</title>
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -47,7 +47,7 @@
         }
 
         .PageDeGarde p {
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1.1em;
             max-width: 520px;
             margin: 20px auto 50px;
@@ -62,12 +62,12 @@
         }
 
         .InfosProjet div {
-            background: rgba(255,255,255,0.10);
-            border: 1px solid rgba(255,255,255,0.18);
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.18);
             border-radius: 50px;
             padding: 10px 24px;
             font-size: 0.88em;
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .InfosProjet div strong {
@@ -107,17 +107,17 @@
 
         .MenuNav a {
             padding: 9px 22px;
-            background: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.12);
             color: #fff;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
             font-size: 0.9em;
-            border: 1px solid rgba(255,255,255,0.18);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .MenuNav a:hover {
-            background: rgba(255,255,255,0.25);
+            background: rgba(255, 255, 255, 0.25);
         }
 
         /* ===== CONTENU PRINCIPAL ===== */
@@ -150,8 +150,13 @@
             margin-bottom: 14px;
         }
 
-        .TexteSection strong { color: #2c1810; }
-        .TexteSection a { color: #6B3A1F; }
+        .TexteSection strong {
+            color: #2c1810;
+        }
+
+        .TexteSection a {
+            color: #6B3A1F;
+        }
 
         hr {
             border: none;
@@ -191,7 +196,7 @@
         }
 
         .CarteLien small {
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             font-size: 0.75em;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -235,8 +240,20 @@
             gap: 4px;
         }
 
-        .wf-logo { width: 34px; height: 6px; background: #E8A84C; border-radius: 3px; margin-right: auto; }
-        .wf-lien { width: 20px; height: 5px; background: rgba(255,255,255,0.4); border-radius: 3px; }
+        .wf-logo {
+            width: 34px;
+            height: 6px;
+            background: #E8A84C;
+            border-radius: 3px;
+            margin-right: auto;
+        }
+
+        .wf-lien {
+            width: 20px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 3px;
+        }
 
         .wf-hero {
             width: 100%;
@@ -248,7 +265,12 @@
             justify-content: center;
         }
 
-        .wf-hero span { width: 55%; height: 7px; background: rgba(255,255,255,0.6); border-radius: 3px; }
+        .wf-hero span {
+            width: 55%;
+            height: 7px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 3px;
+        }
 
         .wf-cols {
             display: flex;
@@ -256,22 +278,63 @@
             height: 38px;
         }
 
-        .wf-col { flex: 1; background: rgba(59,26,8,0.10); border-radius: 5px; }
+        .wf-col {
+            flex: 1;
+            background: rgba(59, 26, 8, 0.10);
+            border-radius: 5px;
+        }
 
-        .wf-ligne { height: 5px; background: rgba(59,26,8,0.15); border-radius: 3px; margin-bottom: 5px; }
-        .wf-ligne.courte { width: 60%; }
+        .wf-ligne {
+            height: 5px;
+            background: rgba(59, 26, 8, 0.15);
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
 
-        .wf-input { height: 9px; background: rgba(255,255,255,0.6); border: 1px solid rgba(59,26,8,0.2); border-radius: 3px; margin-bottom: 6px; }
-        .wf-btn { width: 45%; height: 11px; background: #c07830; border-radius: 4px; margin-top: 4px; }
+        .wf-ligne.courte {
+            width: 60%;
+        }
 
-        .wf-footer { width: 100%; height: 11px; background: rgba(59,26,8,0.18); border-radius: 3px; margin-top: auto; }
+        .wf-input {
+            height: 9px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(59, 26, 8, 0.2);
+            border-radius: 3px;
+            margin-bottom: 6px;
+        }
+
+        .wf-btn {
+            width: 45%;
+            height: 11px;
+            background: #c07830;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        .wf-footer {
+            width: 100%;
+            height: 11px;
+            background: rgba(59, 26, 8, 0.18);
+            border-radius: 3px;
+            margin-top: auto;
+        }
 
         .InfoMaquette {
             padding: 16px 18px;
         }
 
-        .InfoMaquette h3 { font-size: 0.92em; color: #3B1A08; margin-bottom: 4px; }
-        .InfoMaquette p  { font-size: 0.8em; color: #7A5C45; line-height: 1.5; margin: 0; }
+        .InfoMaquette h3 {
+            font-size: 0.92em;
+            color: #3B1A08;
+            margin-bottom: 4px;
+        }
+
+        .InfoMaquette p {
+            font-size: 0.8em;
+            color: #7A5C45;
+            line-height: 1.5;
+            margin: 0;
+        }
 
         .BadgePage {
             display: inline-block;
@@ -280,7 +343,7 @@
             letter-spacing: 1.5px;
             text-transform: uppercase;
             color: #C07830;
-            background: rgba(192,120,48,0.12);
+            background: rgba(192, 120, 48, 0.12);
             padding: 3px 10px;
             border-radius: 50px;
             margin-bottom: 6px;
@@ -303,7 +366,11 @@
             text-align: center;
         }
 
-        .CarteW3C h3 { font-size: 0.9em; color: #7A5C45; font-weight: 500; }
+        .CarteW3C h3 {
+            font-size: 0.9em;
+            color: #7A5C45;
+            font-weight: 500;
+        }
 
         .BadgeValide {
             display: inline-flex;
@@ -317,7 +384,10 @@
             margin: 12px 0 8px;
         }
 
-        .CarteW3C p { font-size: 0.8em; color: #7A5C45; }
+        .CarteW3C p {
+            font-size: 0.8em;
+            color: #7A5C45;
+        }
 
         .ListeCorrections {
             margin: 20px 0 0 22px;
@@ -325,7 +395,9 @@
             line-height: 2;
         }
 
-        .ListeCorrections li { margin-bottom: 4px; }
+        .ListeCorrections li {
+            margin-bottom: 4px;
+        }
 
         /* ===== OPQUAST ===== */
         .ListeOpquast {
@@ -362,8 +434,18 @@
             margin-top: 2px;
         }
 
-        .CorpsRegle h3 { font-size: 0.93em; color: #3B1A08; margin-bottom: 4px; }
-        .CorpsRegle p  { font-size: 0.84em; color: #7A5C45; margin: 0; line-height: 1.6; }
+        .CorpsRegle h3 {
+            font-size: 0.93em;
+            color: #3B1A08;
+            margin-bottom: 4px;
+        }
+
+        .CorpsRegle p {
+            font-size: 0.84em;
+            color: #7A5C45;
+            margin: 0;
+            line-height: 1.6;
+        }
 
         .TagRegle {
             display: inline-block;
@@ -376,12 +458,35 @@
             margin-bottom: 6px;
         }
 
-        .tag-nav    { background: #EEF3FF; color: #3B5BDB; }
-        .tag-html   { background: #FFF0E6; color: #CC5500; }
-        .tag-css    { background: #F0EEFF; color: #6741D9; }
-        .tag-access { background: #EAF7EC; color: #2D7A3A; }
-        .tag-mobile { background: #FFF8E1; color: #B36B00; }
-        .tag-form   { background: #FCE4EC; color: #B5003D; }
+        .tag-nav {
+            background: #EEF3FF;
+            color: #3B5BDB;
+        }
+
+        .tag-html {
+            background: #FFF0E6;
+            color: #CC5500;
+        }
+
+        .tag-css {
+            background: #F0EEFF;
+            color: #6741D9;
+        }
+
+        .tag-access {
+            background: #EAF7EC;
+            color: #2D7A3A;
+        }
+
+        .tag-mobile {
+            background: #FFF8E1;
+            color: #B36B00;
+        }
+
+        .tag-form {
+            background: #FCE4EC;
+            color: #B5003D;
+        }
 
         /* ===== CONCLUSION ===== */
         .Conclusion {
@@ -391,8 +496,17 @@
             margin-top: 28px;
         }
 
-        .Conclusion h2 { color: #fff; font-size: 1.8em; margin-bottom: 20px; }
-        .Conclusion p  { color: rgba(255,255,255,0.82); line-height: 1.78; margin-bottom: 14px; }
+        .Conclusion h2 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .Conclusion p {
+            color: rgba(255, 255, 255, 0.82);
+            line-height: 1.78;
+            margin-bottom: 14px;
+        }
 
         .GrilleChiffres {
             display: flex;
@@ -403,8 +517,8 @@
 
         .CarteChiffre {
             flex: 1 1 150px;
-            background: rgba(255,255,255,0.10);
-            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 12px;
             padding: 18px;
             text-align: center;
@@ -417,7 +531,10 @@
             margin-bottom: 5px;
         }
 
-        .CarteChiffre span { font-size: 0.82em; color: rgba(255,255,255,0.7); }
+        .CarteChiffre span {
+            font-size: 0.82em;
+            color: rgba(255, 255, 255, 0.7);
+        }
 
         /* ===== FOOTER ===== */
         footer {
@@ -426,434 +543,511 @@
             text-align: center;
         }
 
-        footer p { color: wheat; font-size: 0.9em; }
-        footer a { color: #FFD700; text-decoration: none; font-weight: 600; }
+        footer p {
+            color: wheat;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 650px) {
-            .PageDeGarde h1 { font-size: 2.2em; }
-            .Centraliser { padding: 40px 18px; }
-            .nav { padding: 12px 16px; flex-wrap: wrap; gap: 10px; }
-            .MenuNav { flex-wrap: wrap; gap: 6px; }
-            .MenuNav a { padding: 7px 14px; font-size: 0.82em; }
-            .CarteLien { flex-direction: column; gap: 12px; }
-            .Conclusion { padding: 28px 22px; }
-        }
+            .PageDeGarde h1 {
+                font-size: 2.2em;
+            }
 
+            .Centraliser {
+                padding: 40px 18px;
+            }
+
+            .nav {
+                padding: 12px 16px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .MenuNav {
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            .MenuNav a {
+                padding: 7px 14px;
+                font-size: 0.82em;
+            }
+
+            .CarteLien {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .Conclusion {
+                padding: 28px 22px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<!-- ===== PAGE DE GARDE ===== -->
-<div class="PageDeGarde">
-    <h1>Chococoa-<span>Web</span></h1>
-    <p>Livrable du projet de site web statique HTML5/CSS3 — document de synthèse répondant aux exigences du chapitre 7.4 du cahier des charges P_Web-Statique 293.</p>
-    <div class="InfosProjet">
-        <div><strong>Auteur</strong> Rafael Melo</div>
-        <div><strong>Module</strong> Web Statique 293</div>
-        <div><strong>École</strong> ETML — Lausanne</div>
-        <div><strong>Trimestre</strong> 2e trimestre 2025</div>
-    </div>
-</div>
-
-<!-- ===== NAVIGATION ===== -->
-<div class="nav">
-    <p class="logo"><a href="index.html">Chococoa-Web</a></p>
-    <div class="MenuNav">
-        <a href="#intro">Introduction</a>
-        <a href="#url">URL</a>
-        <a href="#maquettes">Maquettes</a>
-        <a href="#w3c">W3C</a>
-        <a href="#opquast">OpQuast</a>
-        <a href="#conclusion">Conclusion</a>
-    </div>
-</div>
-
-<!-- ===== 1. INTRODUCTION ===== -->
-<div class="Centraliser" id="intro">
-    <p class="TitreSectionTag">Section 01</p>
-    <h2 class="TitreSection">Introduction &amp; Thème du site</h2>
-
-    <p class="TexteSection"><strong>Chococoa-Web</strong> est un site web statique entièrement consacré à l'univers du chocolat. Le projet explore la culture, l'histoire et les bienfaits du cacao sous un angle à la fois informatif, ludique et visuellement soigné.</p>
-
-    <p class="TexteSection">Le site s'adresse à tout amateur de chocolat, curieux d'approfondir ses connaissances sur l'origine des fèves, les différents types de chocolat, les accords gustatifs ou encore les bienfaits santé. Une boutique fictive, un espace VIP avec recettes exclusives et un quiz interactif complètent l'expérience utilisateur.</p>
-
-    <p class="TexteSection">Sur le plan technique, ce projet a permis de consolider les notions de <strong>sémantique HTML5</strong>, de <strong>mise en page CSS</strong> (Flexbox, Grid, animations), de <strong>responsive design</strong> et de conformité aux standards W3C et aux bonnes pratiques OpQuast.</p>
-
-    <p class="TexteSection">Le thème du chocolat permettait de couvrir une variété de pages : contenu scientifique, boutique fictive, formulaires de contact et d'inscription, réseaux sociaux, actualités et conditions légales — répondant ainsi à l'ensemble des fonctionnalités du cahier des charges.</p>
-</div>
-
-<hr>
-
-<!-- ===== 2. URL ===== -->
-<div class="Centraliser" id="url">
-    <p class="TitreSectionTag">Section 02</p>
-    <h2 class="TitreSection">URL d'accès au site</h2>
-
-    <p class="TexteSection">Le site est déployé sur l'infrastructure d'hébergement de l'ETML et accessible depuis n'importe quel navigateur moderne.</p>
-
-    <div class="CarteLien">
-        <span>🔗</span>
-        <div>
-            <small>URL publique</small>
-            <a href="https://etml.rafael-melo.ch/chococoa-web/" target="_blank" rel="noopener noreferrer">
-                https://etml.rafael-melo.ch/chococoa-web/
-            </a>
+    <!-- ===== PAGE DE GARDE ===== -->
+    <div class="PageDeGarde">
+        <h1>Chococoa-<span>Web</span></h1>
+        <p>Livrable du projet de site web statique HTML5/CSS3 - document de synthèse répondant aux exigences du chapitre
+            7.4 du cahier des charges P_Web-Statique 293.</p>
+        <div class="InfosProjet">
+            <div><strong>Auteur</strong> Rafael Melo</div>
+            <div><strong>Module</strong> Web Statique 293</div>
+            <div><strong>École</strong> ETML - Lausanne</div>
+            <div><strong>Trimestre</strong> 2e trimestre 2025</div>
         </div>
     </div>
 
-    <p class="TexteSection">Le site fonctionne sur ordinateur, tablette et smartphone. Il a été testé sur Chrome, Firefox et Edge.</p>
-</div>
-
-<hr>
-
-<!-- ===== 3. MAQUETTES ===== -->
-<div class="Centraliser" id="maquettes">
-    <p class="TitreSectionTag">Section 03</p>
-    <h2 class="TitreSection">Maquettes des pages</h2>
-
-    <p class="TexteSection">Chaque page a d'abord été dessinée sous forme de wireframe avant le développement. Voici un aperçu des maquettes principales :</p>
-
-    <div class="GrilleMaquettes">
-
-        <!-- Page 1 -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div class="wf-hero"><span></span></div>
-                <div class="wf-cols">
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                </div>
-                <div class="wf-ligne"></div>
-                <div class="wf-ligne courte"></div>
-                <div class="wf-footer"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Page 1</span>
-                <h3>Accueil (index.html)</h3>
-                <p>Bannière héro, galerie 3 images cliquables, bienfaits du chocolat, appel au quiz.</p>
-            </div>
-        </div>
-
-        <!-- Page 2 -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div class="wf-ligne" style="margin-top:8px;"></div>
-                <div class="wf-ligne"></div>
-                <div class="wf-ligne courte"></div>
-                <div class="wf-cols" style="margin-top:6px;">
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                </div>
-                <div class="wf-ligne" style="margin-top:8px;"></div>
-                <div class="wf-footer"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Page 2</span>
-                <h3>Infos (Infos.html)</h3>
-                <p>Histoire du cacao, types de chocolat, fabrication, anecdotes scientifiques.</p>
-            </div>
-        </div>
-
-        <!-- Page 3 -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div class="wf-ligne" style="margin-top:8px; width:40%;"></div>
-                <div class="wf-input" style="margin-top:8px;"></div>
-                <div class="wf-input"></div>
-                <div class="wf-input" style="height:22px;"></div>
-                <div class="wf-btn"></div>
-                <div class="wf-footer" style="margin-top:auto;"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Page 3</span>
-                <h3>Contact (Contact.html)</h3>
-                <p>Coordonnées de la boutique et formulaire avec nom, e-mail, sujet et message.</p>
-            </div>
-        </div>
-
-        <!-- Page 4 -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div style="width:100%; height:14px; background:linear-gradient(135deg,#c07830,#e8a84c); border-radius:4px; margin-top:8px;"></div>
-                <div class="wf-cols" style="margin-top:8px;">
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                    <div class="wf-col"></div>
-                </div>
-                <div class="wf-ligne" style="margin-top:8px;"></div>
-                <div class="wf-ligne courte"></div>
-                <div class="wf-footer"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Page 4 — pied de page</span>
-                <h3>Espace VIP (EspaceVIP.html)</h3>
-                <p>Recettes exclusives, astuces de dégustation, accords et avantages membres.</p>
-            </div>
-        </div>
-
-        <!-- Quiz -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div class="wf-cols" style="margin-top:8px; height:18px;">
-                    <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
-                    <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
-                    <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
-                    <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
-                </div>
-                <div class="wf-input" style="margin-top:8px;"></div>
-                <div class="wf-input"></div>
-                <div class="wf-input"></div>
-                <div class="wf-footer" style="margin-top:auto;"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Bonus</span>
-                <h3>Quiz (Quiz.html)</h3>
-                <p>Choix du thème, 4 questions avec réponses, score et anecdote à la fin.</p>
-            </div>
-        </div>
-
-        <!-- Boutique -->
-        <div class="CarteMaquette">
-            <div class="AperçuWireframe">
-                <div class="wf-nav">
-                    <div class="wf-logo"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                    <div class="wf-lien"></div>
-                </div>
-                <div class="wf-ligne" style="margin-top:8px; width:40%;"></div>
-                <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px; margin-top:8px;">
-                    <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
-                    <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
-                    <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
-                </div>
-                <div class="wf-footer" style="margin-top:auto;"></div>
-            </div>
-            <div class="InfoMaquette">
-                <span class="BadgePage">Bonus</span>
-                <h3>Boutique (Boutique.html)</h3>
-                <p>Grille de produits artisanaux avec prix, étiquettes et boutons de commande.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<hr>
-
-<!-- ===== 4. W3C ===== -->
-<div class="Centraliser" id="w3c">
-    <p class="TitreSectionTag">Section 04</p>
-    <h2 class="TitreSection">Statut de validité W3C</h2>
-
-    <p class="TexteSection">Tous les fichiers HTML et CSS ont été soumis au validateur officiel W3C (<a href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">validator.w3.org</a> et <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">jigsaw.w3.org/css-validator/</a>). Tous les fichiers passent sans erreur.</p>
-
-    <div class="GrilleW3C">
-        <div class="CarteW3C">
-            <h3>HTML5</h3>
-            <div class="BadgeValide">✔ Valide</div>
-            <p>0 erreur · 0 avertissement critique</p>
-        </div>
-        <div class="CarteW3C">
-            <h3>CSS3</h3>
-            <div class="BadgeValide">✔ Valide</div>
-            <p>0 erreur · propriétés préfixées documentées</p>
+    <!-- ===== NAVIGATION ===== -->
+    <div class="nav">
+        <p class="logo"><a href="index.html">Chococoa-Web</a></p>
+        <div class="MenuNav">
+            <a href="#intro">Introduction</a>
+            <a href="#url">URL</a>
+            <a href="#maquettes">Maquettes</a>
+            <a href="#w3c">W3C</a>
+            <a href="#opquast">OpQuast</a>
+            <a href="#conclusion">Conclusion</a>
         </div>
     </div>
 
-    <h3 style="margin-top:32px; margin-bottom:10px; color:#3B1A08;">Principales corrections apportées</h3>
-    <ul class="ListeCorrections">
-        <li>Balises sémantiques : <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code></li>
-        <li>Un seul <code>&lt;h1&gt;</code> par page, hiérarchie h2 &gt; h3 respectée</li>
-        <li>Menu de navigation avec <code>&lt;ul&gt;&lt;li&gt;</code> au lieu de <code>&lt;div&gt;&lt;p&gt;</code></li>
-        <li><code>type="button"</code> ajouté sur tous les boutons non-submit</li>
-        <li>Attributs <code>aria-label</code>, <code>aria-current="page"</code> et <code>aria-hidden="true"</code></li>
-        <li>Balises <code>&lt;script&gt;</code> déplacées juste avant <code>&lt;/body&gt;</code></li>
-        <li>Styles inline supprimés et déplacés dans le CSS</li>
-        <li>Citations avec <code>&lt;blockquote&gt;</code> + <code>&lt;cite&gt;</code>, dates avec <code>&lt;time datetime&gt;</code></li>
-    </ul>
-</div>
+    <!-- ===== 1. INTRODUCTION ===== -->
+    <div class="Centraliser" id="intro">
+        <p class="TitreSectionTag">Section 01</p>
+        <h2 class="TitreSection">Introduction &amp; Thème du site</h2>
 
-<hr>
+        <p class="TexteSection"><strong>Chococoa-Web</strong> est un site web statique entièrement consacré à l'univers
+            du chocolat. Le projet explore la culture, l'histoire et les bienfaits du cacao sous un angle à la fois
+            informatif, ludique et visuellement soigné.</p>
 
-<!-- ===== 5. OPQUAST ===== -->
-<div class="Centraliser" id="opquast">
-    <p class="TitreSectionTag">Section 05</p>
-    <h2 class="TitreSection">10 règles OpQuast retenues</h2>
+        <p class="TexteSection">Le site s'adresse à tout amateur de chocolat, curieux d'approfondir ses connaissances
+            sur l'origine des fèves, les différents types de chocolat, les accords gustatifs ou encore les bienfaits
+            santé. Une boutique fictive, un espace VIP avec recettes exclusives et un quiz interactif complètent
+            l'expérience utilisateur.</p>
 
-    <p class="TexteSection">Ces règles ont été choisies sur <a href="https://checklists.opquast.com/fr/" target="_blank" rel="noopener noreferrer">checklists.opquast.com</a> et appliquées sur l'ensemble des pages du site.</p>
+        <p class="TexteSection">Sur le plan technique, ce projet a permis de consolider les notions de
+            <strong>sémantique HTML5</strong>, de <strong>mise en page CSS</strong> (Flexbox, Grid, animations), de
+            <strong>responsive design</strong> et de conformité aux standards W3C et aux bonnes pratiques OpQuast.</p>
 
-    <ol class="ListeOpquast">
+        <p class="TexteSection">Le thème du chocolat permettait de couvrir une variété de pages : contenu scientifique,
+            boutique fictive, formulaires de contact et d'inscription, réseaux sociaux, actualités et conditions légales
+            répondant ainsi à l'ensemble des fonctionnalités du cahier des charges.</p>
+    </div>
 
-        <li>
-            <div class="NumeroRegle">1</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-html">Structure</span>
-                <h3>Chaque page a un titre <code>&lt;title&gt;</code> unique et pertinent</h3>
-                <p>Toutes les pages utilisent le format <em>«&nbsp;Titre de la page — Chococoa-Web&nbsp;»</em>, visible dans l'onglet du navigateur.</p>
+    <hr>
+
+    <!-- ===== 2. URL ===== -->
+    <div class="Centraliser" id="url">
+        <p class="TitreSectionTag">Section 02</p>
+        <h2 class="TitreSection">URL d'accès au site</h2>
+
+        <p class="TexteSection">Le site est déployé sur l'infrastructure d'hébergement de l'ETML et accessible depuis
+            n'importe quel navigateur moderne.</p>
+
+        <div class="CarteLien">
+            <span>🔗</span>
+            <div>
+                <small>URL publique</small>
+                <a href="https://etml.rafael-melo.ch/chococoa-web/" target="_blank" rel="noopener noreferrer">
+                    https://etml.rafael-melo.ch/chococoa-web/
+                </a>
             </div>
-        </li>
+        </div>
 
-        <li>
-            <div class="NumeroRegle">2</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-access">Accessibilité</span>
-                <h3>Les images ont un attribut <code>alt</code> pertinent</h3>
-                <p>Toutes les balises <code>&lt;img&gt;</code> ont un <code>alt</code> décrivant leur contenu. Les images décoratives ont <code>alt=""</code>.</p>
+        <p class="TexteSection">Le site fonctionne sur ordinateur, tablette et smartphone. Il a été testé sur Chrome,
+            Firefox et Edge.</p>
+    </div>
+
+    <hr>
+
+    <!-- ===== 3. MAQUETTES ===== -->
+    <div class="Centraliser" id="maquettes">
+        <p class="TitreSectionTag">Section 03</p>
+        <h2 class="TitreSection">Maquettes des pages</h2>
+
+        <p class="TexteSection">Chaque page a d'abord été dessinée sous forme de wireframe avant le développement. Voici
+            un aperçu des maquettes principales :</p>
+
+        <div class="GrilleMaquettes">
+
+            <!-- Page 1 -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div class="wf-hero"><span></span></div>
+                    <div class="wf-cols">
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                    </div>
+                    <div class="wf-ligne"></div>
+                    <div class="wf-ligne courte"></div>
+                    <div class="wf-footer"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Page 1</span>
+                    <h3>Accueil (index.html)</h3>
+                    <p>Bannière héro, galerie 3 images cliquables, bienfaits du chocolat, appel au quiz.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">3</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-mobile">Mobile</span>
-                <h3>Le site s'adapte à toutes les largeurs d'écran</h3>
-                <p>La meta viewport est présente, les tailles utilisent des unités relatives et les mises en page sont faites avec Flexbox et CSS Grid. Testé dès 320 px.</p>
+            <!-- Page 2 -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div class="wf-ligne" style="margin-top:8px;"></div>
+                    <div class="wf-ligne"></div>
+                    <div class="wf-ligne courte"></div>
+                    <div class="wf-cols" style="margin-top:6px;">
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                    </div>
+                    <div class="wf-ligne" style="margin-top:8px;"></div>
+                    <div class="wf-footer"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Page 2</span>
+                    <h3>Infos (Infos.html)</h3>
+                    <p>Histoire du cacao, types de chocolat, fabrication, anecdotes scientifiques.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">4</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-nav">Navigation</span>
-                <h3>La navigation est identique sur toutes les pages</h3>
-                <p>Le menu de navigation est placé au même endroit et contient les mêmes liens sur chaque page du site.</p>
+            <!-- Page 3 -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div class="wf-ligne" style="margin-top:8px; width:40%;"></div>
+                    <div class="wf-input" style="margin-top:8px;"></div>
+                    <div class="wf-input"></div>
+                    <div class="wf-input" style="height:22px;"></div>
+                    <div class="wf-btn"></div>
+                    <div class="wf-footer" style="margin-top:auto;"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Page 3</span>
+                    <h3>Contact (Contact.html)</h3>
+                    <p>Coordonnées de la boutique et formulaire avec nom, e-mail, sujet et message.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">5</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-access">Accessibilité</span>
-                <h3>Le contraste texte/fond est suffisant</h3>
-                <p>Toutes les combinaisons de couleurs respectent un ratio WCAG AA (≥ 4.5:1 pour le texte normal), vérifié avec Chrome DevTools.</p>
+            <!-- Page 4 -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div
+                        style="width:100%; height:14px; background:linear-gradient(135deg,#c07830,#e8a84c); border-radius:4px; margin-top:8px;">
+                    </div>
+                    <div class="wf-cols" style="margin-top:8px;">
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                        <div class="wf-col"></div>
+                    </div>
+                    <div class="wf-ligne" style="margin-top:8px;"></div>
+                    <div class="wf-ligne courte"></div>
+                    <div class="wf-footer"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Page 4 - pied de page</span>
+                    <h3>Espace VIP (EspaceVIP.html)</h3>
+                    <p>Recettes exclusives, astuces de dégustation, accords et avantages membres.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">6</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-html">Structure</span>
-                <h3>La hiérarchie des titres est correcte</h3>
-                <p>Un seul <code>&lt;h1&gt;</code> par page. Les niveaux <code>h2</code> et <code>h3</code> suivent une logique sans sauter de niveau.</p>
+            <!-- Quiz -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div class="wf-cols" style="margin-top:8px; height:18px;">
+                        <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
+                        <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
+                        <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
+                        <div class="wf-col" style="background:#c07830; opacity:0.6;"></div>
+                    </div>
+                    <div class="wf-input" style="margin-top:8px;"></div>
+                    <div class="wf-input"></div>
+                    <div class="wf-input"></div>
+                    <div class="wf-footer" style="margin-top:auto;"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Bonus</span>
+                    <h3>Quiz (Quiz.html)</h3>
+                    <p>Choix du thème, 4 questions avec réponses, score et anecdote à la fin.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">7</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-nav">Navigation</span>
-                <h3>Le lien de la page active est identifiable</h3>
-                <p>L'attribut <code>aria-current="page"</code> est appliqué au lien actif dans la navigation pour les technologies d'assistance.</p>
+            <!-- Boutique -->
+            <div class="CarteMaquette">
+                <div class="AperçuWireframe">
+                    <div class="wf-nav">
+                        <div class="wf-logo"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                        <div class="wf-lien"></div>
+                    </div>
+                    <div class="wf-ligne" style="margin-top:8px; width:40%;"></div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px; margin-top:8px;">
+                        <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
+                        <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
+                        <div style="background:rgba(59,26,8,0.10); border-radius:5px; height:48px;"></div>
+                    </div>
+                    <div class="wf-footer" style="margin-top:auto;"></div>
+                </div>
+                <div class="InfoMaquette">
+                    <span class="BadgePage">Bonus</span>
+                    <h3>Boutique (Boutique.html)</h3>
+                    <p>Grille de produits artisanaux avec prix, étiquettes et boutons de commande.</p>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <div class="NumeroRegle">8</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-form">Formulaires</span>
-                <h3>Chaque champ de formulaire a une étiquette associée</h3>
-                <p>Tous les champs (Contact, Newsletter) ont un <code>&lt;label for="..."&gt;</code> lié à leur <code>id</code>, pour une meilleure accessibilité.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ===== 4. W3C ===== -->
+    <div class="Centraliser" id="w3c">
+        <p class="TitreSectionTag">Section 04</p>
+        <h2 class="TitreSection">Statut de validité W3C</h2>
+
+        <p class="TexteSection">Tous les fichiers HTML et CSS ont été soumis au validateur officiel W3C (<a
+                href="https://validator.w3.org" target="_blank" rel="noopener noreferrer">validator.w3.org</a> et <a
+                href="https://jigsaw.w3.org/css-validator/" target="_blank"
+                rel="noopener noreferrer">jigsaw.w3.org/css-validator/</a>). Tous les fichiers passent sans erreur.</p>
+
+        <div class="GrilleW3C">
+            <div class="CarteW3C">
+                <h3>HTML5</h3>
+                <div class="BadgeValide">✔ Valide</div>
+                <p>0 erreur · 0 avertissement critique</p>
             </div>
-        </li>
-
-        <li>
-            <div class="NumeroRegle">9</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-css">CSS</span>
-                <h3>Les tailles de police utilisent des unités relatives</h3>
-                <p>Toutes les tailles sont en <code>em</code>, <code>rem</code> ou <code>clamp()</code> pour respecter les réglages d'accessibilité du navigateur.</p>
+            <div class="CarteW3C">
+                <h3>CSS3</h3>
+                <div class="BadgeValide">✔ Valide</div>
+                <p>0 erreur · propriétés préfixées documentées</p>
             </div>
-        </li>
+        </div>
 
-        <li>
-            <div class="NumeroRegle">10</div>
-            <div class="CorpsRegle">
-                <span class="TagRegle tag-mobile">Liens</span>
-                <h3>Les liens externes s'ouvrent dans un nouvel onglet de manière sécurisée</h3>
-                <p>Les liens vers des sites tiers utilisent <code>target="_blank"</code> et <code>rel="noopener noreferrer"</code> pour des raisons de sécurité.</p>
-            </div>
-        </li>
+        <h3 style="margin-top:32px; margin-bottom:10px; color:#3B1A08;">Principales corrections apportées</h3>
+        <ul class="ListeCorrections">
+            <li>Balises sémantiques : <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code></li>
+            <li>Un seul <code>&lt;h1&gt;</code> par page, hiérarchie h2 &gt; h3 respectée</li>
+            <li>Menu de navigation avec <code>&lt;ul&gt;&lt;li&gt;</code> au lieu de <code>&lt;div&gt;&lt;p&gt;</code>
+            </li>
+            <li><code>type="button"</code> ajouté sur tous les boutons non-submit</li>
+            <li>Attributs <code>aria-label</code>, <code>aria-current="page"</code> et <code>aria-hidden="true"</code>
+            </li>
+            <li>Balises <code>&lt;script&gt;</code> déplacées juste avant <code>&lt;/body&gt;</code></li>
+            <li>Styles inline supprimés et déplacés dans le CSS</li>
+            <li>Citations avec <code>&lt;blockquote&gt;</code> + <code>&lt;cite&gt;</code>, dates avec
+                <code>&lt;time datetime&gt;</code></li>
+        </ul>
+    </div>
 
-    </ol>
-</div>
+    <hr>
 
-<hr>
+    <!-- ===== 5. OPQUAST ===== -->
+    <div class="Centraliser" id="opquast">
+        <p class="TitreSectionTag">Section 05</p>
+        <h2 class="TitreSection">10 règles OpQuast retenues</h2>
 
-<!-- ===== 6. CONCLUSION ===== -->
-<div class="Centraliser" id="conclusion">
-    <p class="TitreSectionTag">Section 06</p>
-    <h2 class="TitreSection">Conclusion &amp; Réflexion</h2>
+        <p class="TexteSection">Ces règles ont été choisies sur <a href="https://checklists.opquast.com/fr/"
+                target="_blank" rel="noopener noreferrer">checklists.opquast.com</a> et appliquées sur l'ensemble des
+            pages du site.</p>
 
-    <div class="Conclusion">
-        <h2>Bilan du projet</h2>
+        <ol class="ListeOpquast">
 
-        <p>Ce projet a été une expérience complète et enrichissante. En partant d'un sujet simple — le chocolat — il a été possible de construire un site cohérent, ambitieux et techniquement solide, en respectant toutes les exigences du cahier des charges.</p>
+            <li>
+                <div class="NumeroRegle">1</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-html">Structure</span>
+                    <h3>Chaque page a un titre <code>&lt;title&gt;</code> unique et pertinent</h3>
+                    <p>Toutes les pages utilisent le format <em>«&nbsp;Titre de la page - Chococoa-Web&nbsp;»</em>,
+                        visible dans l'onglet du navigateur.</p>
+                </div>
+            </li>
 
-        <p>La mise en conformité W3C a été la partie la plus formatrice : restructurer le HTML pour utiliser les bonnes balises sémantiques et corriger la hiérarchie des titres a demandé une relecture rigoureuse de chaque page. Cela m'a permis de mieux comprendre l'importance des standards web pour l'accessibilité et le référencement.</p>
+            <li>
+                <div class="NumeroRegle">2</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-access">Accessibilité</span>
+                    <h3>Les images ont un attribut <code>alt</code> pertinent</h3>
+                    <p>Toutes les balises <code>&lt;img&gt;</code> ont un <code>alt</code> décrivant leur contenu. Les
+                        images décoratives ont <code>alt=""</code>.</p>
+                </div>
+            </li>
 
-        <p>L'application des règles OpQuast a aussi été révélatrice. Des détails comme les attributs <code>aria-current</code>, les contrastes de couleurs ou les labels de formulaires semblent mineurs, mais ont un vrai impact sur l'expérience de tous les utilisateurs.</p>
+            <li>
+                <div class="NumeroRegle">3</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-mobile">Mobile</span>
+                    <h3>Le site s'adapte à toutes les largeurs d'écran</h3>
+                    <p>La meta viewport est présente, les tailles utilisent des unités relatives et les mises en page
+                        sont faites avec Flexbox et CSS Grid. Testé dès 320 px.</p>
+                </div>
+            </li>
 
-        <p>Pour aller plus loin, il serait intéressant d'ajouter un vrai back-end pour les formulaires et de tester l'accessibilité avec un lecteur d'écran comme NVDA.</p>
+            <li>
+                <div class="NumeroRegle">4</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-nav">Navigation</span>
+                    <h3>La navigation est identique sur toutes les pages</h3>
+                    <p>Le menu de navigation est placé au même endroit et contient les mêmes liens sur chaque page du
+                        site.</p>
+                </div>
+            </li>
 
-        <div class="GrilleChiffres">
-            <div class="CarteChiffre">
-                <strong>10+</strong>
-                <span>Pages HTML</span>
-            </div>
-            <div class="CarteChiffre">
-                <strong>2</strong>
-                <span>Fichiers CSS</span>
-            </div>
-            <div class="CarteChiffre">
-                <strong>0</strong>
-                <span>Erreurs W3C</span>
-            </div>
-            <div class="CarteChiffre">
-                <strong>10</strong>
-                <span>Règles OpQuast</span>
+            <li>
+                <div class="NumeroRegle">5</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-access">Accessibilité</span>
+                    <h3>Le contraste texte/fond est suffisant</h3>
+                    <p>Toutes les combinaisons de couleurs respectent un ratio WCAG AA (≥ 4.5:1 pour le texte normal),
+                        vérifié avec Chrome DevTools.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="NumeroRegle">6</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-html">Structure</span>
+                    <h3>La hiérarchie des titres est correcte</h3>
+                    <p>Un seul <code>&lt;h1&gt;</code> par page. Les niveaux <code>h2</code> et <code>h3</code> suivent
+                        une logique sans sauter de niveau.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="NumeroRegle">7</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-nav">Navigation</span>
+                    <h3>Le lien de la page active est identifiable</h3>
+                    <p>L'attribut <code>aria-current="page"</code> est appliqué au lien actif dans la navigation pour
+                        les technologies d'assistance.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="NumeroRegle">8</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-form">Formulaires</span>
+                    <h3>Chaque champ de formulaire a une étiquette associée</h3>
+                    <p>Tous les champs (Contact, Newsletter) ont un <code>&lt;label for="..."&gt;</code> lié à leur
+                        <code>id</code>, pour une meilleure accessibilité.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="NumeroRegle">9</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-css">CSS</span>
+                    <h3>Les tailles de police utilisent des unités relatives</h3>
+                    <p>Toutes les tailles sont en <code>em</code>, <code>rem</code> ou <code>clamp()</code> pour
+                        respecter les réglages d'accessibilité du navigateur.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="NumeroRegle">10</div>
+                <div class="CorpsRegle">
+                    <span class="TagRegle tag-mobile">Liens</span>
+                    <h3>Les liens externes s'ouvrent dans un nouvel onglet de manière sécurisée</h3>
+                    <p>Les liens vers des sites tiers utilisent <code>target="_blank"</code> et
+                        <code>rel="noopener noreferrer"</code> pour des raisons de sécurité.</p>
+                </div>
+            </li>
+
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- ===== 6. CONCLUSION ===== -->
+    <div class="Centraliser" id="conclusion">
+        <p class="TitreSectionTag">Section 06</p>
+        <h2 class="TitreSection">Conclusion &amp; Réflexion</h2>
+
+        <div class="Conclusion">
+            <h2>Bilan du projet</h2>
+
+            <p>Ce projet a été une expérience complète et enrichissante. En partant d'un sujet simple : le chocolat, il
+                a été possible de construire un site cohérent, ambitieux et techniquement solide, en respectant toutes
+                les exigences du cahier des charges.</p>
+
+            <p>La mise en conformité W3C a été la partie la plus formatrice : restructurer le HTML pour utiliser les
+                bonnes balises sémantiques et corriger la hiérarchie des titres a demandé une relecture rigoureuse de
+                chaque page. Cela m'a permis de mieux comprendre l'importance des standards web pour l'accessibilité et
+                le référencement.</p>
+
+            <p>L'application des règles OpQuast a aussi été révélatrice. Des détails comme les attributs
+                <code>aria-current</code>, les contrastes de couleurs ou les labels de formulaires semblent mineurs,
+                mais ont un vrai impact sur l'expérience de tous les utilisateurs.</p>
+
+            <p>Pour aller plus loin, il serait intéressant d'ajouter un vrai back-end pour les formulaires et de tester
+                l'accessibilité avec un lecteur d'écran comme NVDA.</p>
+
+            <div class="GrilleChiffres">
+                <div class="CarteChiffre">
+                    <strong>10+</strong>
+                    <span>Pages HTML</span>
+                </div>
+                <div class="CarteChiffre">
+                    <strong>2</strong>
+                    <span>Fichiers CSS</span>
+                </div>
+                <div class="CarteChiffre">
+                    <strong>0</strong>
+                    <span>Erreurs W3C</span>
+                </div>
+                <div class="CarteChiffre">
+                    <strong>10</strong>
+                    <span>Règles OpQuast</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-    <p><small>© 2025 Chococoa-Web — ETML &nbsp;|&nbsp; <a href="Conditions-generales.html">Mentions légales</a></small></p>
-</footer>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p><small>© 2025 Chococoa-Web — ETML &nbsp;|&nbsp; <a href="Conditions-generales.html">Mentions
+                    légales</a></small></p>
+    </footer>
 
 </body>
+
 </html>
